@@ -10,6 +10,11 @@
     rel="stylesheet"
 />
     <link rel="stylesheet" href="style.css">
+    <style>
+        .products::-webkit-scrollbar{
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <main class="w-full">
@@ -57,17 +62,99 @@
         </div>
        
 
-       <div class="horizontal_scroll w-full">
+       <div class="horizontal_scroll mt-20 w-full">
          <div class="hcontainer w-full h-[400vh] relative">
-            <div class="slides h-screen sticky top-0 flex whitespace-nowrap overflow-hidden">
-                <div class="w-full h-screen flex-shrink-0 bg-red-950 overflow-x-auto" ></div>
-               <div class="w-full h-screen flex-shrink-0 bg-red-300"></div>
-               <div class="w-full h-screen flex-shrink-0 bg-red-400"></div>
-               <div class="w-full h-screen flex-shrink-0 bg-red-500"></div>
+            <div class="slides h-screen  sticky top-0 flex whitespace-nowrap overflow-hidden">
+               <div class="slide1  w-full relative h-screen flex-shrink-0 bg-[#A5D9Df] overflow-hidden">
+                    <div class="centerd_text flex flex-col items-center absolute top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+                        <h1 class="font-semibold capitalize tracking-tighter text-[#466366]  text-3xl">it's as easy as it can get.</h1>
+                        <a class="px-10 py-3 font-semibold tracking-tight mt-3   bg-[#466366] text-white rounded-full" href="#">Try BeyondWater</a>
+                    </div>
+                    <img class="absolute right-0 -bottom-10 w-2/3" src="" alt="">
+                    <img class="absolute top-0  w-1/3 " src=""alt=""> 
+                    <img class=" absolute bottom-0 -left-20  w-2/3" src="" alt="">
+                </div>
+               <div class="slide2  w-full relative flex items-end justify-center pb-32 h-screen flex-shrink-0 bg-[#6431A5] overflow-hidden">
+                 <img class="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 " src="" alt="">
+                 <h1 class="text-[43vw] font-[900] tracking-tighter text-white ">FLIP IT</h1>
+               </div>
+             <div class="slide3 w-full h-screen relative flex items-center justify-center flex-shrink-0 bg-[#FBD11B] overflow-hidden">
+                <img class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 " src="" alt="">
+                <h1 class="text-[43vw] font-[900] tracking-tighter text-[#D9A900]  ">SHAKE</h1>
+             </div>
+               <div class="slide4 w-full h-screen relative flex items-center justify-center flex-shrink-0 bg-[#14BB7F] overflow-hidden">
+                <img class="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 scale-[1.3]" src="" alt="">
+                <h1 class="text-[38vw] font-[900] tracking-tighter text-[#2C8666]">DRINK</h1>
+               </div>
             </div>
          </div>
       </div>
 
+      <div class="vitamin my-10 ">
+        <h1 class="text-5xl px-4  tracking-tighter font-semibold">vitamin drinks</h1>
+        <div class="products w-full overflow-x-auto pl-4 flex gap-3 whitespace-nowrap mt-10">
+            <div class="product flex-shrink-0 ">
+                <div class="product_container">
+                    <div class="w-60">
+                       <div class="img bg-orange-400 flex items-center justify-center rounded-t-lg w-full h-72">
+                           <img class="w-full" src="" alt="">
+                       </div>
+                       <div class="discription text-[#A36D1C] flex items-center justify-between bg-[#FFE8C4] px-4 py-3">
+                           <h3 class="font-medium text-lg  ">Zesty Orange</h3>
+                           <h3 class="font-medium ">₹ 300</h3>
+                       </div>
+                       <button class="w-full mt-2 text-[#A36D1C] font-medium rounded-lg py-3 bg-[#FFE8C4]">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product flex-shrink-0">
+                <div class="product_container">
+                    <div class="w-60">
+                       <div class="img bg-orange-400 flex items-center justify-center rounded-t-lg w-full h-72">
+                           <img class="w-full" src="" alt="">
+                       </div>
+                       <div class="discription text-[#A36D1C] flex items-center justify-between bg-[#FFE8C4] px-4 py-3">
+                           <h3 class="font-medium text-lg  ">Zesty Orange</h3>
+                           <h3 class="font-medium ">₹ 300</h3>
+                       </div>
+                       <button class="w-full mt-2 text-[#A36D1C] font-medium rounded-lg py-3 bg-[#FFE8C4]">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      
+      <div class="douknow flex flex-col justify-between w-full font-regular px-5 py-10 h-screen">
+       <div class="top">
+        <h1 class="font-semibold text-5xl tracking-tighter ">do you know</h1>
+        <h1 class="text-7xl tracking-tighter mt-5 leading-none">not all</h1>
+        <h1 class="text-7xl tracking-tighter leading-none"><span class="font-semibold">fats,</span> are</h1>
+        <h1 class="font-semibold text-7xl tracking-tighter">bad fats.</h1>
+       </div>
+       <div class="bottom text-right">
+        <h3 class="text-4xl tracking-tighter ">our <span class="font-medium ">instagram has more info like this.</span> </h3>
+        <a class="px-10 py-3 text-white bg-black tracking-tighter mt-5 text-2xl font-semibold inline-block" href="#">click to see</a>
+       </div>
+      </div>
+
+      <div class="brands w-full overflow-hidden my-20">
+        <h1 class="text-xl font-medium text-center tracking-tighter my-10 mb-5">our work recognised by</h1>
+        <div class="row flex items-center justify-center gap-3">
+            <img class="w-10 flex-shrink-0" src="" alt="">
+            <img class="w-10 flex-shrink-0" src="" alt="">
+            <img class="w-10 flex-shrink-0" src="" alt="">
+            <img class="w-10 flex-shrink-0" src="" alt="">
+        </div>
+        <div class="row flex items-center justify-center gap-3">
+            <img class="w-10 flex-shrink-0" src="" alt="">
+            <img class="w-10 flex-shrink-0" src="" alt="">
+            <img class="w-10 flex-shrink-0" src="" alt="">
+            <img class="w-10 flex-shrink-0" src="" alt="">
+        </div>
+      </div>
+
+      <footer class="text-xs font-semibold text-center py-5 bg-gray-500">this is a reimagined website for the sharktank brand beyondwater.</footer>
     </main>
 </body>
 </html>
